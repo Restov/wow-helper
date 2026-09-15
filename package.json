@@ -7,6 +7,7 @@
     "start:api": "bun apps/api/src/index.ts",
     "db:migrate": "kysely migrate latest",
     "db:rollback": "kysely migrate down",
+    "test": "bun test tests/unit",
     "typecheck": "bunx tsc --noEmit"
   },
   "dependencies": {

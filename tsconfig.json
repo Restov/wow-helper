@@ -15,5 +15,10 @@
     "noUncheckedIndexedAccess": true,
     "noImplicitOverride": true
   },
-  "include": ["apps/**/*.ts", "packages/**/*.ts", "kysely.config.ts"]
+  "include": [
+    "apps/**/*.ts",
+    "packages/**/*.ts",
+    "tests/**/*.ts",
+    "kysely.config.ts"
+  ]
 }
