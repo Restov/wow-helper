@@ -1,7 +1,7 @@
 import type { Selectable } from "kysely";
 import type { Kysely } from "kysely";
 
-import type { UserRepositoryContract } from "../contracts/user-repository";
+import type { UserRepositoryContract } from "../contracts/repositories/user-repository";
 import type { Database, UsersTable } from "../database/schema";
 import type { User } from "../models/user";
 

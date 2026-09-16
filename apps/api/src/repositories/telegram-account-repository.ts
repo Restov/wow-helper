@@ -1,6 +1,6 @@
 import type { Kysely, Selectable } from "kysely";
 
-import type { TelegramAccountRepositoryContract } from "../contracts/telegram-account-repository";
+import type { TelegramAccountRepositoryContract } from "../contracts/repositories/telegram-account-repository";
 import type { Database, TelegramAccountsTable } from "../database/schema";
 import type {
   CreateTelegramAccountInput,
