@@ -19,4 +19,14 @@ describe("API", () => {
 
     expect(response.status).toBe(404);
   });
+
+  it("propagates the request ID", async () => {
+    const response = await createApp().handle(
+      new Request("http://localhost/health", {
+        headers: { "x-request-id": "request-123" },
+      }),
+    );
+
+    expect(response.headers.get("x-request-id")).toBe("request-123");
+  });
 });
