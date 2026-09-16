@@ -13,6 +13,6 @@ export default defineConfig({
     pool: new Pool({ connectionString }),
   },
   migrations: {
-    migrationFolder: "packages/db/src/migrations",
+    migrationFolder: "apps/api/src/database/migrations",
   },
 });
