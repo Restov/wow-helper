@@ -4,15 +4,19 @@
   "type": "module",
   "scripts": {
     "dev:api": "bun --watch apps/api/src/index.ts",
+    "dev:worker": "bun --watch apps/worker/src/index.ts",
     "start:api": "bun apps/api/src/index.ts",
+    "start:worker": "bun apps/worker/src/index.ts",
     "db:migrate": "kysely migrate latest",
     "db:rollback": "kysely migrate down",
     "test": "bun test tests/unit",
     "typecheck": "bunx tsc --noEmit"
   },
   "dependencies": {
+    "@elysia/cron": "^1.4.2",
     "@elysia/openapi": "^1.4.16",
     "elysia": "^1.4.30",
+    "fast-xml-parser": "^5.11.1",
     "kysely": "0.29.5",
     "pg": "8.23.0",
     "pino": "^10.3.1"
